@@ -197,7 +197,7 @@ main { min-height: 70vh; outline: none; }
 @media (max-width: 620px) { .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; } }
 
 .layout-side { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 1.5rem; align-items: start; }
-@media (max-width: 960px) { .layout-side { grid-template-columns: 1fr; } }
+@media (max-width: 960px) { .layout-side { grid-template-columns: minmax(0, 1fr); } }
 .sticky { position: sticky; top: 84px; }
 
 /* ---------- Cards ---------- */
@@ -233,7 +233,6 @@ main { min-height: 70vh; outline: none; }
 .tag {
   display: inline-flex; align-items: center; gap: .3rem; font-size: .76rem; font-weight: 600;
   padding: .18rem .55rem; border-radius: 99px; background: var(--surface-2); color: var(--text-2);
-  white-space: nowrap;
 }
 .tag.brand { background: var(--brand-soft); color: var(--brand); }
 .tag.accent { background: var(--accent-soft); color: var(--accent); }
@@ -580,3 +579,21 @@ details.acc .acc-body { padding: 0 1rem 1rem; color: var(--text-2); }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; scroll-behavior: auto !important; }
 }
+
+/* ---------- Feinschliff Karten ---------- */
+.card-title-row > div { min-width: 0; flex: 1; }
+.card h3 { overflow-wrap: break-word; hyphens: auto; -webkit-hyphens: auto; }
+.card-link .card-foot { flex-wrap: wrap; row-gap: .3rem; }
+.card-link .card-foot > span { white-space: normal; }
+.grid > * { min-width: 0; }
+.theme-toggle { display: inline-grid; place-items: center; }
+.theme-toggle svg { width: 18px; height: 18px; }
+.tags .tag { white-space: normal; text-align: left; line-height: 1.35; }
+.radar-wrap { max-width: 520px; margin-inline: auto; }
+.layout-side > * { min-width: 0; }
+@media (max-width: 620px) {
+  .ladder { flex-direction: column; gap: 6px; }
+  .ladder-step, .ladder-step:first-child { clip-path: none; margin: 0; border-radius: 10px; padding: .7rem .9rem; min-width: 0; }
+}
+h1, h2 { overflow-wrap: break-word; hyphens: auto; -webkit-hyphens: auto; }
+.detail-head .titles { min-width: 0; flex-basis: 220px; }

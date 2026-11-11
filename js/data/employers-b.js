@@ -25,7 +25,7 @@ MTH.employers = (MTH.employers || []).concat([
     locations: ['Heidelberg (Campus Im Neuenheimer Feld)'],
     focus: ['Universitäre Maximalversorgung', 'Onkologie und Strahlentherapie (u. a. Ionenstrahl-Therapiezentrum HIT)', 'Medizinische Software', 'Translationale Forschung'],
     size: 'Öffentliche Einrichtung',
-    description: 'Großes Universitätsklinikum mit enger Verbindung zum Deutschen Krebsforschungszentrum und zum Heidelberger Ionenstrahl-Therapiezentrum (HIT). Die Abteilung Medizintechnik betreut den gesamten Geräte- und Anlagenpark; zudem ist das Klinikum für die Eigenentwicklung medizinischer Software als Medizinprodukt zertifiziert. Interessant für Medizinphysik, Medizintechnik und Softwareentwicklung.',
+    description: 'Großes Universitätsklinikum mit enger Verbindung zum Deutschen Krebsforschungszentrum und zum Heidelberger Ionenstrahl-Therapiezentrum (HIT). Die Abteilung Medizintechnik betreut den gesamten Geräte- und Anlagenpark; zudem ist das Institut für Medizinische Informatik seit 2025 nach ISO 13485 für die Entwicklung medizinischer Software als Medizinprodukt zertifiziert. Interessant für Medizinphysik, Medizintechnik und Softwareentwicklung.',
     professionIds: ['medizinphysiker', 'medizintechnikingenieur', 'medizintechniker', 'geraetemanagement', 'software-entwickler', 'regulatory-affairs', 'technischer-leiter'],
     website: 'https://www.klinikum.uni-heidelberg.de'
   },
@@ -118,7 +118,7 @@ MTH.employers = (MTH.employers || []).concat([
     focus: ['Kommunale Akut- und Notfallversorgung', 'Zentrale Medizintechnik'],
     size: 'Öffentliche Einrichtung',
     founded: '2001',
-    description: 'Größter kommunaler Krankenhauskonzern Deutschlands im Eigentum des Landes Berlin mit mehreren Klinika in der Stadt. Die Medizintechnik ist zentral organisiert und betreut die Geräte aller Standorte. Bezahlung in Anlehnung an den TVöD.',
+    description: 'Größter kommunaler Krankenhauskonzern Deutschlands im Eigentum des Landes Berlin mit neun Klinika in der Stadt. Die Medizintechnik betreut einen großen Gerätepark an mehreren Standorten. Im Mutterunternehmen gilt der TVöD, in Tochtergesellschaften teilweise abweichende Regelungen.',
     professionIds: ['medizintechniker', 'geraetemanagement', 'medizintechnikingenieur', 'technischer-leiter', 'medizinphysiker'],
     website: 'https://www.vivantes.de'
   },
@@ -147,13 +147,13 @@ MTH.employers = (MTH.employers || []).concat([
     professionIds: ['medizintechniker', 'geraetemanagement', 'servicetechniker', 'medizintechnikingenieur', 'technischer-leiter', 'qualitaetsmanager']
   },
   {
-    id: 'sana-medizintechnik-service', name: 'Sana Medizintechnisches Servicezentrum GmbH (Sana Klinik Service)',
+    id: 'sana-medizintechnik-service', name: 'Sana Medizintechnisches Servicezentrum GmbH (MTSZ)',
     type: 'service',
     hq: 'Ismaning', state: 'Bayern', region: 'sued',
     locations: ['Bundesweite Servicestandorte in Kliniken'],
-    focus: ['Herstellerunabhängiges Gerätemanagement', 'Instandhaltung und Prüfungen nach MPBetreibV', 'Aufbereitung von Medizinprodukten (AEMP)'],
+    focus: ['Herstellerunabhängiges Gerätemanagement', 'Instandhaltung und Prüfungen nach MPBetreibV', 'Planung und Beschaffung von Medizintechnik'],
     size: 'Großunternehmen',
-    description: 'Dienstleistungsgesellschaft innerhalb der Sana-Gruppe (Geschäftsbereich Krankenhaus-Services), die Medizintechnik- und AEMP-Leistungen für Sana-Kliniken und externe Krankenhäuser erbringt. Typisch sind Stellen für Servicetechniker/innen, Medizintechniker/innen und Leitungsfunktionen in regionalen Medizintechnik-Teams.',
+    description: 'Tochtergesellschaft der Sana Kliniken AG mit Sitz in Ismaning, die als herstellerneutraler Dienstleister Medizintechnik für Sana-Kliniken und externe Krankenhäuser plant, betreut und instand hält. Typisch sind Stellen für Servicetechniker/innen, Medizintechniker/innen und Leitungsfunktionen in regionalen Medizintechnik-Teams.',
     professionIds: ['servicetechniker', 'medizintechniker', 'geraetemanagement', 'technischer-leiter', 'qualitaetsmanager'],
     website: 'https://www.sana.de'
   },
@@ -189,7 +189,7 @@ MTH.employers = (MTH.employers || []).concat([
     focus: ['Benannte Stelle nach MDR/IVDR (Kennnummer 0123)', 'Zertifizierung nach ISO 13485', 'Prüfungen nach IEC 60601', 'Software-Bewertung nach IEC 62304'],
     size: 'Konzern',
     founded: '1866 (TÜV SÜD)',
-    description: 'Eine der größten Benannten Stellen für Medizinprodukte und In-vitro-Diagnostika in Europa. Auditorinnen, Auditoren und Produktspezialisten bewerten technische Dokumentationen, Qualitätsmanagementsysteme und klinische Bewertungen. Gefragt sind Ingenieurinnen und Ingenieure mit mehrjähriger Industrieerfahrung.',
+    description: 'Eine der größten Benannten Stellen für Medizinprodukte und In-vitro-Diagnostika in Europa. Auditor/innen und Produktspezialist/innen bewerten technische Dokumentationen, Qualitätsmanagementsysteme und klinische Bewertungen. Gefragt sind Ingenieurinnen und Ingenieure mit mehrjähriger Industrieerfahrung.',
     professionIds: ['regulatory-affairs', 'qualitaetsmanager', 'medizintechnikingenieur', 'biomedizinischer-ingenieur', 'software-entwickler'],
     website: 'https://www.tuvsud.com/de-de'
   },
@@ -246,7 +246,7 @@ MTH.employers = (MTH.employers || []).concat([
     locations: ['Stuttgart', 'Berlin', 'Tuttlingen'],
     focus: ['Benannte Stelle für Medizinprodukte und IVD (Kennnummer 0483)', 'Zertifizierung nach ISO 13485', 'Bewertung technischer Dokumentationen'],
     size: 'Mittelstand',
-    description: 'Auf Medizinprodukte und In-vitro-Diagnostika spezialisierte Benannte Stelle mit Sitz in Stuttgart. Das Unternehmen ist seit 1994 unter der Kennnummer 0483 notifiziert. Typische Positionen sind Auditor/in, Produktspezialist/in für technische Dokumentation und Fachexpert/in für klinische Bewertung.',
+    description: 'Auf Medizinprodukte und In-vitro-Diagnostika spezialisierte Benannte Stelle mit Sitz in Stuttgart. Das Unternehmen ist seit 1994 unter der Kennnummer 0483 notifiziert. Typische Positionen sind Auditor/in, Produktspezialist/in für technische Dokumentation und Fachexperte/-expertin für klinische Bewertung.',
     professionIds: ['regulatory-affairs', 'qualitaetsmanager', 'medizintechnikingenieur', 'biomedizinischer-ingenieur'],
     website: 'https://www.mdc-ce.de'
   },
@@ -257,7 +257,6 @@ MTH.employers = (MTH.employers || []).concat([
     locations: ['Frankfurt am Main'],
     focus: ['Benannte Stelle nach MDR (Kennnummer 0297)', 'Zertifizierung nach ISO 13485', 'MDSAP-Audits'],
     size: 'Mittelstand',
-    founded: '1995',
     description: 'Benannte Stelle für Medizinprodukte innerhalb der DQS-Gruppe, die von der ZLG nach Verordnung (EU) 2017/745 benannt ist. Neben Konformitätsbewertungen führt sie Audits von Qualitätsmanagementsystemen durch. Gute Option für Qualitäts- und Regulatory-Fachleute, die in die Auditorentätigkeit wechseln möchten.',
     professionIds: ['qualitaetsmanager', 'regulatory-affairs', 'medizintechnikingenieur'],
     website: 'https://www.dqsglobal.com/de'
@@ -290,7 +289,7 @@ MTH.employers = (MTH.employers || []).concat([
     id: 'sonic-bioscientia', name: 'Sonic Healthcare Germany / Bioscientia',
     type: 'labor',
     hq: 'Ingelheim am Rhein', state: 'Rheinland-Pfalz', region: 'west',
-    locations: ['Ingelheim', 'Berlin', 'Jena', 'Freiburg', 'Moers', 'St. Ingbert'],
+    locations: ['Ingelheim am Rhein', 'Berlin', 'Jena', 'Freiburg', 'Mainz', 'Pirmasens'],
     focus: ['Labormedizin und Spezialdiagnostik', 'Humangenetik', 'Laborautomation und zentrale Labor-IT'],
     size: 'Großunternehmen',
     description: 'Bioscientia gehört seit 2007 zur australischen Sonic-Healthcare-Gruppe, die in Deutschland mehrere Laborverbünde betreibt. Der Standort Ingelheim gilt als größtes medizinisches Labor in Rheinland-Pfalz; dort ist auch die zentrale IT angesiedelt. Einsatzfelder bestehen in Laborautomation, IT und Qualitätsmanagement.',

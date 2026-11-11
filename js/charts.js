@@ -62,8 +62,9 @@
     opts = opts || {};
     var size = opts.size || 360;
     var max = opts.max || 5;
-    var cx = size / 2, cy = size / 2;
-    var r = size / 2 - 62;
+    var padX = 90;                          // Platz für Achsenbeschriftungen links/rechts
+    var cx = size / 2 + padX, cy = size / 2;
+    var r = size / 2 - 50;
     var n = axes.length;
     var out = [];
 
@@ -72,7 +73,7 @@
       return [cx + Math.cos(a) * r * (v / max), cy + Math.sin(a) * r * (v / max)];
     }
 
-    out.push('<svg class="chart radar" viewBox="0 0 ' + size + ' ' + size + '" role="img" aria-label="' +
+    out.push('<svg class="chart radar" viewBox="0 0 ' + (size + 2 * padX) + ' ' + size + '" role="img" aria-label="' +
       esc(opts.ariaLabel || 'Kompetenzprofil als Netzdiagramm') + '">');
 
     // Gitter (Ringe)
@@ -85,10 +86,10 @@
     for (var j = 0; j < n; j++) {
       var p = pt(j, max);
       out.push('<line x1="' + cx + '" y1="' + cy + '" x2="' + p[0].toFixed(1) + '" y2="' + p[1].toFixed(1) + '" class="grid-line"/>');
-      var lp = pt(j, max + 0.95);
+      var lp = pt(j, max + 0.7);
       var anchor = Math.abs(lp[0] - cx) < 8 ? 'middle' : (lp[0] > cx ? 'start' : 'end');
       out.push('<text x="' + lp[0].toFixed(1) + '" y="' + (lp[1] + 4).toFixed(1) + '" text-anchor="' + anchor +
-        '" font-size="11.5" font-weight="600">' + esc(axes[j].label) + '</text>');
+        '" font-size="13" font-weight="600">' + esc(axes[j].label) + '</text>');
     }
 
     // Flächen

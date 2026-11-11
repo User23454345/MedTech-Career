@@ -48,7 +48,7 @@ MTH.professions = (MTH.professions || []).concat([
       ]
     },
     requirements: [
-      'Abgeschlossene Berufsausbildung in einem einschlägigen technischen Beruf (z. B. Elektroniker/in, Mechatroniker/in, MTR/MTL)',
+      'Abgeschlossene Berufsausbildung in einem einschlägigen Beruf (z. B. Elektroniker/in, Mechatroniker/in; welche Berufe zugelassen sind, regelt die jeweilige Fachschule bzw. das Land)',
       'Berufserfahrung gemäß Zulassungsvoraussetzungen der jeweiligen Fachschule (landesrechtlich geregelt)',
       'Abschluss als staatlich geprüfte/r Techniker/in Fachrichtung Medizintechnik (Fachschule)',
       'Für STK/MTK: geeignete Ausbildung, Kenntnisse und Erfahrung im Sinne der MPBetreibV',
@@ -56,9 +56,9 @@ MTH.professions = (MTH.professions || []).concat([
     ],
     entryPaths: [
       { type: 'Ausbildung', title: 'Elektroniker/in für Geräte und Systeme oder Mechatroniker/in', duration: '3,5 Jahre' },
-      { type: 'Weiterbildung', title: 'Staatlich geprüfte/r Techniker/in Fachrichtung Medizintechnik (Fachschule)', duration: '2 Jahre Vollzeit oder ca. 4 Jahre berufsbegleitend' },
+      { type: 'Weiterbildung', title: 'Staatlich geprüfte/r Techniker/in Fachrichtung Medizintechnik (Fachschule)', duration: '2 Jahre Vollzeit oder ca. 3–4 Jahre berufsbegleitend' },
       { type: 'Weiterbildung', title: 'Zusatzqualifikationen: Prüfungen nach DIN EN 62353, STK/MTK-Schulungen, Herstellerschulungen', duration: 'wenige Tage je Kurs' },
-      { type: 'Quereinstieg', title: 'Aus MTR- oder MTL-Berufen über die Fachschule Medizintechnik', duration: 'ca. 2–4 Jahre' }
+      { type: 'Quereinstieg', title: 'Aus medizinisch-technischen Berufen (z. B. MTR, MTL) über die Fachschule Medizintechnik, sofern die Fachschule diese Berufe zulässt', duration: 'ca. 2–4 Jahre' }
     ],
     educationIds: [
       'ausb-elektroniker-geraete',
@@ -100,7 +100,7 @@ MTH.professions = (MTH.professions || []).concat([
     icon: '🧬',
     category: 'Ingenieurwesen & Entwicklung',
     summary: 'Biomedizinische Ingenieur/innen verbinden Ingenieurwissenschaften mit Biologie und Medizin, um neue Diagnose- und Therapieverfahren, Implantate oder Biomaterialien zu entwickeln.',
-    description: 'Der Beruf ist stärker forschungs- und biologieorientiert als die klassische Medizintechnik: Im Mittelpunkt stehen etwa Biosignalverarbeitung, Biomechanik, Biomaterialien, Tissue Engineering, Biosensorik oder medizinische Bildverarbeitung. Biomedizinische Ingenieur/innen arbeiten in Forschungs- und Entwicklungsabteilungen von Herstellern, an Hochschulen und Forschungsinstituten sowie in Start-ups. Sie konzipieren Versuche, entwickeln Prototypen, werten Messdaten aus und begleiten präklinische Prüfungen und klinische Prüfungen bzw. Leistungsstudien. Da Entwicklungen später als Medizinprodukt oder In-vitro-Diagnostikum zugelassen werden sollen, gehören Grundkenntnisse in MDR (EU) 2017/745, IVDR (EU) 2017/746, Risikomanagement nach ISO 14971 und Biokompatibilität nach ISO 10993 zum Handwerkszeug.',
+    description: 'Der Beruf ist stärker forschungs- und biologieorientiert als die klassische Medizintechnik: Im Mittelpunkt stehen etwa Biosignalverarbeitung, Biomechanik, Biomaterialien, Tissue Engineering, Biosensorik oder medizinische Bildverarbeitung. Biomedizinische Ingenieur/innen arbeiten in Forschungs- und Entwicklungsabteilungen von Herstellern, an Hochschulen und Forschungsinstituten sowie in Start-ups. Sie konzipieren Versuche, entwickeln Prototypen, werten Messdaten aus und begleiten präklinische und klinische Prüfungen bzw. Leistungsstudien. Da Entwicklungen später als Medizinprodukt oder In-vitro-Diagnostikum zugelassen werden sollen, gehören Grundkenntnisse in MDR (EU) 2017/745, IVDR (EU) 2017/746, Risikomanagement nach ISO 14971 und Biokompatibilität nach ISO 10993 zum Handwerkszeug.',
     tasks: [
       'Konzeption und Entwicklung von Prototypen für Diagnostik, Therapie oder Implantate',
       'Planung, Durchführung und Auswertung von Labor- und Tierversuchen bzw. Prüfstandsversuchen',
@@ -185,7 +185,7 @@ MTH.professions = (MTH.professions || []).concat([
     icon: '🚐',
     category: 'Technik & Service',
     summary: 'Servicetechniker/innen betreuen Medizingeräte direkt beim Kunden – meist im Außendienst für Hersteller oder Servicedienstleister – und sind für Installation, Wartung und Reparatur zuständig.',
-    description: 'Im Außendienst sind Servicetechniker/innen für ein festes Gebiet oder eine bestimmte Produktgruppe zuständig, etwa Röntgen- und CT-Anlagen, Laborgeräte, Endoskopie oder Dentaltechnik. Sie installieren neue Systeme, führen planmäßige Wartungen und herstellerspezifische Prüfungen durch, beheben Störungen vor Ort oder per Remote-Zugriff und dokumentieren alle Arbeiten im Servicesystem. Da sie häufig der direkte Ansprechpartner des Herstellers im Krankenhaus oder in der Praxis sind, sind Kundenorientierung und souveränes Auftreten genauso wichtig wie technisches Können. Ausgangspunkt ist meist eine elektrotechnische oder mechatronische Ausbildung, ergänzt durch intensive Produktschulungen beim Hersteller; ein Firmenwagen und eine hohe Reisebereitschaft gehören in der Regel dazu.',
+    description: 'Im Außendienst sind Servicetechniker/innen für ein festes Gebiet oder eine bestimmte Produktgruppe zuständig, etwa Röntgen- und CT-Anlagen, Laborgeräte, Endoskopie oder Dentaltechnik. Sie installieren neue Systeme, führen planmäßige Wartungen und herstellerspezifische Prüfungen durch, beheben Störungen vor Ort oder per Remote-Zugriff und dokumentieren alle Arbeiten im Servicesystem. Da sie häufig die direkten Ansprechpartner/innen des Herstellers im Krankenhaus oder in der Praxis sind, sind Kundenorientierung und souveränes Auftreten genauso wichtig wie technisches Können. Ausgangspunkt ist meist eine elektrotechnische oder mechatronische Ausbildung, ergänzt durch intensive Produktschulungen beim Hersteller; ein Firmenwagen und eine hohe Reisebereitschaft gehören in der Regel dazu.',
     tasks: [
       'Installation und Inbetriebnahme von Medizingeräten und -systemen beim Kunden',
       'Planmäßige Wartung, Kalibrierung und herstellerspezifische Sicherheitsprüfungen',
@@ -361,7 +361,7 @@ MTH.professions = (MTH.professions || []).concat([
     icon: '⚛️',
     category: 'Physik & Strahlung',
     summary: 'Medizinphysiker/innen sorgen in Strahlentherapie, Nuklearmedizin und Radiologie für die sichere und optimale Anwendung ionisierender Strahlung am Menschen – mit der gesetzlich geregelten Rolle als Medizinphysik-Experte/in.',
-    description: 'Der Medizinphysik-Experte bzw. die Medizinphysik-Expertin (MPE) ist im Strahlenschutzgesetz (StrlSchG) und in der Strahlenschutzverordnung (StrlSchV) verankert: Für die Behandlung mit ionisierender Strahlung (Strahlentherapie) muss ein MPE eng eingebunden werden, in der Nuklearmedizin und bei bestimmten Röntgenanwendungen wie der Computertomographie ist er entsprechend den Vorgaben der StrlSchV hinzuzuziehen. Voraussetzung ist in der Regel ein Hochschulabschluss in Medizinphysik oder Physik (Master bzw. Diplom) sowie die erforderliche Fachkunde im Strahlenschutz, die durch Sachkunde (praktische Erfahrung) und anerkannte Kurse erworben und von der zuständigen Behörde bescheinigt wird. In der Strahlentherapie erstellen und prüfen Medizinphysiker/innen Bestrahlungspläne, führen Dosimetrie und Qualitätssicherung an Linearbeschleunigern durch und verantworten die Dosisberechnung; in Nuklearmedizin und Radiologie stehen Qualitätssicherung, Dosisoptimierung und Strahlenschutz im Vordergrund. Darüber hinaus bietet die Deutsche Gesellschaft für Medizinische Physik (DGMP) eine Fachanerkennung an.',
+    description: 'Der Medizinphysik-Experte bzw. die Medizinphysik-Expertin (MPE) ist im Strahlenschutzgesetz (StrlSchG) und in der Strahlenschutzverordnung (StrlSchV) verankert: Bei Behandlungen mit individuellem Bestrahlungsplan (Strahlentherapie) muss eine MPE-Fachkraft eng eingebunden sein; bei standardisierten nuklearmedizinischen Behandlungen, Untersuchungen mit offenen radioaktiven Stoffen und Untersuchungen mit Computertomographen ist sie nach § 131 StrlSchV zur Mitarbeit hinzuzuziehen. Voraussetzung ist in der Regel ein Hochschulabschluss in Medizinphysik oder Physik (Master bzw. Diplom) sowie die erforderliche Fachkunde im Strahlenschutz, die durch Sachkunde (praktische Erfahrung) und anerkannte Kurse erworben und von der zuständigen Behörde bescheinigt wird. In der Strahlentherapie erstellen und prüfen Medizinphysiker/innen Bestrahlungspläne, führen Dosimetrie und Qualitätssicherung an Linearbeschleunigern durch und verantworten die Dosisberechnung; in Nuklearmedizin und Radiologie stehen Qualitätssicherung, Dosisoptimierung und Strahlenschutz im Vordergrund. Darüber hinaus bietet die Deutsche Gesellschaft für Medizinische Physik (DGMP) eine Fachanerkennung an.',
     tasks: [
       'Bestrahlungsplanung und physikalische Plan-Prüfung in der Strahlentherapie',
       'Dosimetrie, Kalibrierung und Qualitätssicherung an Linearbeschleunigern und Afterloadern',
@@ -403,11 +403,11 @@ MTH.professions = (MTH.professions || []).concat([
       'Optional, aber verbreitet: Fachanerkennung der DGMP'
     ],
     entryPaths: [
-      { type: 'Studium', title: 'B.Sc. Medizinphysik oder Physik', duration: '6 Semester' },
+      { type: 'Studium', title: 'B.Sc. Medizinphysik oder Physik', duration: '6–7 Semester' },
       { type: 'Studium', title: 'M.Sc. Medizinphysik bzw. Medical Physics', duration: '4 Semester' },
-      { type: 'Weiterbildung', title: 'Erwerb der Fachkunde als Medizinphysik-Experte/in (Sachkunde + Strahlenschutzkurse)', duration: 'je nach Anwendungsgebiet ca. 1–2 Jahre praktische Tätigkeit' },
+      { type: 'Weiterbildung', title: 'Erwerb der Fachkunde als Medizinphysik-Experte/in (Sachkunde + Strahlenschutzkurse)', duration: 'Sachkundezeit je nach Anwendungsgebiet ca. 12–18 Monate (Strahlentherapie, Nuklearmedizin, Röntgendiagnostik), bei mehreren Gebieten länger' },
       { type: 'Weiterbildung', title: 'Fachanerkennung Medizinische Physik (DGMP)', duration: 'mehrjährig, berufsbegleitend' },
-      { type: 'Quereinstieg', title: 'Physiker/innen mit Promotion über Sachkunde und Fachkundekurse', duration: 'ca. 1–2 Jahre' }
+      { type: 'Quereinstieg', title: 'Physiker/innen (Master, Diplom oder Promotion) über Sachkunde und Fachkundekurse', duration: 'ca. 1–2 Jahre' }
     ],
     educationIds: [
       'bsc-medizinphysik',
@@ -430,7 +430,7 @@ MTH.professions = (MTH.professions || []).concat([
       { time: '09:00', activity: 'Erstellung und Optimierung von Bestrahlungsplänen' },
       { time: '11:30', activity: 'Physikalische Planprüfung und patientenspezifische Verifikationsmessung' },
       { time: '12:30', activity: 'Mittagspause' },
-      { time: '13:30', activity: 'Jährliche Qualitätssicherungsmessungen am CT in der Radiologie' },
+      { time: '13:30', activity: 'Qualitätssicherung und Dosisoptimierung am CT der Radiologie' },
       { time: '15:30', activity: 'Strahlenschutzunterweisung für MTR und Dokumentation der Messergebnisse' }
     ],
     outlook: 'sehr gut',
@@ -445,7 +445,7 @@ MTH.professions = (MTH.professions || []).concat([
     icon: '🏥',
     category: 'Management & Qualität',
     summary: 'Technische Leiter/innen Medizintechnik verantworten den sicheren, wirtschaftlichen und rechtskonformen Betrieb des gesamten Medizingeräteparks einer Einrichtung und führen das Medizintechnik-Team.',
-    description: 'In Krankenhäusern, Klinikverbünden oder bei Servicedienstleistern leiten sie die Abteilung Medizintechnik bzw. das Gerätemanagement. Sie sind dafür verantwortlich, dass die Betreiberpflichten nach MPDG und Medizinprodukte-Betreiberverordnung (MPBetreibV) erfüllt werden – etwa Bestandsverzeichnis, Einweisungen, STK/MTK und Meldepflichten bei Vorkommnissen – und übernehmen häufig die Funktion der bzw. des Beauftragten für Medizinproduktesicherheit nach MPBetreibV. Hinzu kommen Investitions- und Budgetplanung, Beschaffungsprojekte, Wartungs- und Serviceverträge, die Einbindung der Medizintechnik in IT-Netzwerke (z. B. Risikomanagement nach DIN EN 80001-1) sowie die Mitarbeit bei Bau- und Umbauvorhaben. Typischer Hintergrund ist ein Ingenieurstudium der Medizintechnik oder eine Technikerlaufbahn mit langjähriger Erfahrung und Führungsweiterbildung.',
+    description: 'In Krankenhäusern, Klinikverbünden oder bei Servicedienstleistern leiten sie die Abteilung Medizintechnik bzw. das Gerätemanagement. Sie sind dafür verantwortlich, dass die Betreiberpflichten nach MPDG und Medizinprodukte-Betreiberverordnung (MPBetreibV) erfüllt werden – etwa Bestandsverzeichnis, Einweisungen, STK/MTK und Meldepflichten bei Vorkommnissen – und übernehmen häufig die Funktion der bzw. des Beauftragten für Medizinproduktesicherheit nach MPBetreibV. Hinzu kommen Investitions- und Budgetplanung, Beschaffungsprojekte, Wartungs- und Serviceverträge, die Einbindung der Medizintechnik in IT-Netzwerke (z. B. Risikomanagement nach DIN EN IEC 80001-1) sowie die Mitarbeit bei Bau- und Umbauvorhaben. Typischer Hintergrund ist ein Ingenieurstudium der Medizintechnik oder eine Technikerlaufbahn mit langjähriger Erfahrung und Führungsweiterbildung.',
     tasks: [
       'Fachliche und disziplinarische Führung des Medizintechnik-Teams',
       'Sicherstellung der Betreiberpflichten nach MPDG und MPBetreibV (Bestandsverzeichnis, STK/MTK, Einweisungen)',
@@ -467,7 +467,7 @@ MTH.professions = (MTH.professions || []).concat([
         'Medizinprodukterecht: MDR, MPDG, MPBetreibV',
         'Gerätemanagement, Instandhaltungsstrategien und Kennzahlen',
         'Investitions- und Budgetplanung, Vergaberecht (in öffentlichen Häusern)',
-        'Medizintechnik im IT-Netzwerk und Informationssicherheit (z. B. DIN EN 80001-1)',
+        'Medizintechnik im IT-Netzwerk und Informationssicherheit (z. B. DIN EN IEC 80001-1)',
         'Qualitäts- und Risikomanagement',
         'Projektmanagement bei Bau- und Beschaffungsvorhaben'
       ],
@@ -507,7 +507,7 @@ MTH.professions = (MTH.professions || []).concat([
       { title: 'Medizintechniker/in oder Medizintechnikingenieur/in', years: '0–5 J.' },
       { title: 'Teamleitung bzw. Fachgruppenleitung Medizintechnik', years: '5–8 J.' },
       { title: 'Stellvertretende Leitung Medizintechnik', years: '8–12 J.' },
-      { title: 'Technische Leitung Medizintechnik einer Klinik', years: '10–15 J.' },
+      { title: 'Technische Leitung Medizintechnik einer Klinik', years: '12–15 J.' },
       { title: 'Leitung Medizintechnik eines Klinikverbunds oder Gesamtleitung Technik', years: 'ab 15 J.' }
     ],
     dayInLife: [

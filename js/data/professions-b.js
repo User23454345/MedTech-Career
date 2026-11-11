@@ -9,13 +9,13 @@ MTH.professions = (MTH.professions || []).concat([
     title: 'Mitarbeiter/in Krankenhaus-Gerätemanagement',
     icon: '🗂️',
     category: 'Technik & Service',
-    summary: 'Mitarbeitende im Gerätemanagement sorgen dafür, dass alle Medizinprodukte eines Krankenhauses erfasst, geprüft, gewartet und rechtskonform betrieben werden. Sie verbinden Technik, Organisation und Dokumentation nach der Medizinprodukte-Betreiberverordnung (MPBetreibV).',
+    summary: 'Mitarbeitende im Gerätemanagement sorgen dafür, dass alle Medizinprodukte eines Krankenhauses erfasst, geprüft, gewartet und rechtskonform betrieben werden. Sie verbinden Technik, Organisation und Dokumentation nach der Medizinprodukte-Betreiberverordnung (MPBetreibV, Neufassung 2025).',
     description: 'Ein Krankenhaus betreibt oft mehrere tausend aktive Medizinprodukte – von Infusionspumpen über Beatmungsgeräte bis zu Großgeräten der Bildgebung. Das Gerätemanagement (häufig Teil der Abteilung Medizintechnik) führt das Bestandsverzeichnis und die Medizinproduktebücher, plant sicherheitstechnische Kontrollen (STK), messtechnische Kontrollen (MTK) und Instandhaltungen und überwacht deren Fristen. Dazu gehören die Organisation und Dokumentation von Einweisungen des Personals, die Bearbeitung von Störungsmeldungen, die Umsetzung von Sicherheitsinformationen und Rückrufen der Hersteller sowie die Mitwirkung an Beschaffungen. Gearbeitet wird überwiegend mit Gerätemanagement- bzw. CAFM-Software, in enger Abstimmung mit Stationen, Einkauf, Herstellern, Servicedienstleistern und dem bzw. der Beauftragten für Medizinproduktesicherheit.',
     tasks: [
       'Bestandsverzeichnis und Medizinproduktebücher nach MPBetreibV führen und aktuell halten',
       'Fristen für sicherheitstechnische (STK) und messtechnische Kontrollen (MTK) sowie Wartungen planen und überwachen',
       'Prüfungen nach DIN EN 62353 (Wiederholungsprüfungen) und Funktionsprüfungen durchführen oder beauftragen und dokumentieren',
-      'Ersteinweisungen und Einweisungen des Anwenderpersonals organisieren, nachweisen und Beauftragte Personen verwalten',
+      'Ersteinweisungen und Einweisungen des Anwenderpersonals organisieren, nachweisen und beauftragte Personen nach MPBetreibV verwalten',
       'Störungen und Reparaturaufträge annehmen, priorisieren und mit Herstellern oder Servicepartnern koordinieren',
       'Sicherheitsinformationen und Rückrufe (Field Safety Notices) erfassen, betroffene Geräte identifizieren und Maßnahmen nachverfolgen',
       'Gerätedaten, Wartungsverträge und Kosten in der Gerätemanagement- bzw. CAFM-Software pflegen und auswerten'
@@ -48,7 +48,7 @@ MTH.professions = (MTH.professions || []).concat([
     requirements: [
       'Abgeschlossene technische Ausbildung (z. B. Elektroniker/in für Geräte und Systeme, Mechatroniker/in) oder Weiterbildung zum/zur Techniker/in',
       'Alternativ Studium der Medizintechnik oder eine vergleichbare Qualifikation',
-      'Für die Durchführung von STK: Nachweis der Sachkunde gemäß MPBetreibV (Ausbildung, Kenntnisse, Erfahrung, Herstellerschulung)',
+      'Für die Durchführung von STK: Erfüllung der Anforderungen nach § 5 MPBetreibV (geeignete Ausbildung, Kenntnisse und praktische Erfahrung, z. B. durch Herstellerschulung)',
       'Für elektrische Prüfungen: Qualifikation als Elektrofachkraft',
       'Sicherer Umgang mit EDV und Datenbanken'
     ],
@@ -143,7 +143,7 @@ MTH.professions = (MTH.professions || []).concat([
     entryPaths: [
       { type: 'Studium', title: 'Bachelor Medizintechnik oder Biomedical Engineering', duration: '6–7 Semester' },
       { type: 'Ausbildung', title: 'MTR, MTL oder Pflegefachkraft mit klinischer Erfahrung', duration: '3 Jahre + Berufserfahrung' },
-      { type: 'Weiterbildung', title: 'Medizinprodukteberater/in nach § 83 MPDG', duration: 'wenige Tage bis Wochen' },
+      { type: 'Weiterbildung', title: 'Medizinprodukteberater/in nach § 83 MPDG (Basiskurs plus produktspezifische Schulung durch den Hersteller)', duration: 'wenige Tage' },
       { type: 'Quereinstieg', title: 'Aus Service- oder Anwendungstechnik in den Vertrieb', duration: 'individuell' }
     ],
     educationIds: [
@@ -225,7 +225,7 @@ MTH.professions = (MTH.professions || []).concat([
       'Gute Englischkenntnisse'
     ],
     entryPaths: [
-      { type: 'Ausbildung', title: 'MTR (Medizinische/r Technolog/in für Radiologie) oder MTL (für Laboratoriumsanalytik) + Berufserfahrung', duration: '3 Jahre + 2–3 Jahre Praxis' },
+      { type: 'Ausbildung', title: 'MTR (Medizinische/r Technologe/Technologin für Radiologie) oder MTL (für Laboratoriumsanalytik) + Berufserfahrung', duration: '3 Jahre + 2–3 Jahre Praxis' },
       { type: 'Studium', title: 'Bachelor Medizintechnik, Medizinphysik oder Biomedical Engineering', duration: '6–7 Semester' },
       { type: 'Weiterbildung', title: 'Herstellerschulungen und Produktzertifizierungen, Medizinprodukteberater/in', duration: 'Wochen bis Monate' },
       { type: 'Quereinstieg', title: 'Aus der klinischen Praxis (z. B. Radiologie, Labor, Intensivpflege)', duration: 'individuell' }
@@ -244,7 +244,7 @@ MTH.professions = (MTH.professions || []).concat([
     careerPath: [
       { title: 'Einstieg als Junior-Applikationsspezialist/in', years: '0–2 J.' },
       { title: 'Applikationsspezialist/in mit eigener Kundenregion', years: '2–5 J.' },
-      { title: 'Senior- bzw. Lead-Applikationsspezialist/in, Trainer/in für Kolleg/innen', years: '5–8 J.' },
+      { title: 'Senior- bzw. Lead-Applikationsspezialist/in, Trainer/in für Kolleginnen und Kollegen', years: '5–8 J.' },
       { title: 'Teamleitung Applikation oder klinische/r Produktmanager/in', years: '8–12 J.' },
       { title: 'Leitung Clinical Applications / Marketing', years: 'ab 12 J.' }
     ],
@@ -467,7 +467,7 @@ MTH.professions = (MTH.professions || []).concat([
         'Programmiersprachen je nach Einsatz: C/C++ (Embedded), C#/.NET, Java, Python, TypeScript',
         'IEC 62304 (Software-Lebenszyklus) und IEC 82304-1 (Gesundheitssoftware)',
         'Risikomanagement nach ISO 14971 und Gebrauchstauglichkeit nach IEC 62366-1',
-        'Cybersecurity für Medizinprodukte (z. B. IEC 81001-5-1, MDCG-Leitlinie 2019-16)',
+        'Cybersecurity für Medizinprodukte (z. B. IEC 81001-5-1, MDCG 2019-16 Rev. 1)',
         'Software-Testing, CI/CD, Versionsverwaltung (Git) und Anforderungsmanagement',
         'Schnittstellen und Standards im Gesundheitswesen (HL7, FHIR, DICOM)',
         'Grundlagen der MDR, insbesondere Regel 11 für Software'

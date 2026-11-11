@@ -156,8 +156,8 @@
       '<div class="card-title-row"><span class="icon-badge" aria-hidden="true">' + esc(p.icon || '🩺') + '</span>' +
       '<div style="padding-right:2.2rem"><h3>' + esc(p.title) + '</h3><div class="meta"><span class="cat-dot"></span> ' + esc(p.category || '') + '</div></div></div>' +
       '<p class="small" style="margin-top:.7rem">' + esc(p.summary || '') + '</p>' +
-      '<div class="card-foot"><span>' + (m ? 'Median ca. ' + C.keur(m) : '') + '</span>' +
-      '<span class="outlook ' + outlookCls(p.outlook) + '">Aussichten: ' + esc(p.outlook || '–') + '</span></div>' +
+      '<div class="card-foot"><span>' + (m ? 'Median ≈ ' + C.keur(m) : '') + '</span>' +
+      '<span class="outlook ' + outlookCls(p.outlook) + '" title="Arbeitsmarktaussichten">Markt: ' + esc(p.outlook || '–') + '</span></div>' +
       '</a></article>';
   }
 
@@ -174,6 +174,10 @@
       '<p class="small" style="margin-top:.7rem">' + esc(trunc(e.description, 170)) + '</p>' +
       '<div class="card-foot">' + tags(arr(e.focus).slice(0, 3)) + '</div></a></article>';
   }
+  function shortDuration(d) {
+    d = String(d || '–').split(/\s*[(;]|,\s(?=[a-zäöü])/)[0].trim();
+    return trunc(d, 34);
+  }
   function trunc(s, n) { s = String(s || ''); return s.length > n ? s.slice(0, n - 1).replace(/\s+\S*$/, '') + ' …' : s; }
 
   function progCard(p) {
@@ -182,7 +186,7 @@
       '<div class="card-title-row"><span class="icon-badge" aria-hidden="true">' + (EDU_ICONS[p.type] || '🎓') + '</span>' +
       '<div style="padding-right:2.2rem"><h3>' + esc(p.title) + '</h3><div class="meta">' + esc(p.type) + (p.level ? ' · ' + esc(p.level) : '') + '</div></div></div>' +
       '<p class="small" style="margin-top:.7rem">' + esc(trunc(p.description, 160)) + '</p>' +
-      '<div class="card-foot"><span>⏱ ' + esc(p.duration || '–') + '</span><span>' + esc(trunc(p.degree || '', 40)) + '</span></div></a></article>';
+      '<div class="card-foot"><span title="' + esc(p.duration || '') + '">⏱ ' + esc(shortDuration(p.duration)) + '</span><span>' + esc(trunc(p.degree || '', 40)) + '</span></div></a></article>';
   }
 
   /* ---------------------------------------------------------
@@ -198,7 +202,7 @@
     lo = Math.floor(lo / 10000) * 10000; hi = Math.ceil(hi / 10000) * 10000;
     function pct(v) { return ((v - lo) / (hi - lo) * 100).toFixed(2); }
     var ticks = [];
-    var step = (hi - lo) > 80000 ? 20000 : 10000;
+    var step = (hi - lo) > 50000 ? 20000 : 10000;
     for (var t = lo; t <= hi; t += step) ticks.push('<span style="left:' + pct(t) + '%">' + (t / 1000) + ' T€</span>');
 
     var html = '<div class="salary-ranges" role="table" aria-label="Gehaltsspannen nach Beruf">';
@@ -699,7 +703,7 @@
       'Gehaltsspannen nach Beruf, Erfahrung, Region und Arbeitgebertyp – nachvollziehbar aufbereitet und als Richtwerte gekennzeichnet. Dazu Trends und Kennzahlen zum Arbeitsmarkt.',
       crumb([['Start', '#/'], ['Gehalt & Markt']])) +
       '<div class="container page">' +
-      '<div class="notice" role="note"><span aria-hidden="true">⚠️</span><span><strong>Alle Gehaltsangaben sind Richtwerte</strong> (Jahresbrutto, Vollzeit, Stand ' + esc(salaries.asOf || '2026') + '). ' + esc(salaries.disclaimer || '') + '</span></div>' +
+      '<div class="notice" role="note"><span aria-hidden="true">⚠️</span><span><strong>Hinweis: Richtwerte.</strong> ' + esc(salaries.disclaimer || ('Jahresbrutto, Vollzeit, Stand ' + (salaries.asOf || '2026') + '.')) + '</span></div>' +
       '<div class="anchor-nav" style="margin-top:1.2rem"><a href="#spannen" data-anchor>Gehaltsspannen</a><a href="#rechner" data-anchor>Gehaltsrechner</a><a href="#regionen" data-anchor>Regionen</a><a href="#arbeitgebertyp" data-anchor>Arbeitgebertyp &amp; Tarif</a><a href="#markt" data-anchor>Arbeitsmarkt</a><a href="#quellen" data-anchor>Quellen</a></div>' +
 
       '<section id="spannen" class="card"><div class="section-head"><div><h2>Gehaltsspannen nach Beruf</h2><p>Einstieg, Berufserfahrung und Senior-/Leitungsebene. Fahren Sie über die Balken für Details.</p></div></div>' +

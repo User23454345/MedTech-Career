@@ -183,7 +183,7 @@ MTH.education = {
       providers: [
         'HAW Hamburg',
         'TH Lübeck (Biomedizintechnik)',
-        'Hochschule Furtwangen – Hochschulcampus Tuttlingen',
+        'Hochschule Furtwangen – Hochschulcampus Tuttlingen (Medizintechnik – Technologien und Entwicklungsprozesse, B.Sc.)',
         'Technische Hochschule Ulm',
         'Universität Stuttgart und Universität Tübingen (Kooperationsstudiengang)',
         'Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)'
@@ -278,7 +278,7 @@ MTH.education = {
       ],
       costs: 'Semesterbeitrag je nach Hochschule; duale Varianten mit Vergütung durch Partnerunternehmen',
       professionIds: ['software-entwickler', 'geraetemanagement', 'regulatory-affairs'],
-      link: 'https://www.uni-heidelberg.de/de/studium/alle-studienfaecher/medizinische-informatik/medizinische-informatik-bachelor-100'
+      link: 'https://www.uni-heidelberg.de/de/studium/alle-studienfaecher/medizinische-informatik'
     },
 
     /* ---------------------------------------------------------------- Duales Studium */
@@ -305,12 +305,11 @@ MTH.education = {
       ],
       providers: [
         'DHBW Mannheim (Medizintechnik, B.Eng.)',
-        'DHBW Heidenheim (Medizintechnik)',
-        'DHBW Karlsruhe und DHBW Mannheim (Medizintechnische Wissenschaften – Rettungswissenschaften)'
+        'DHBW Heidenheim (Medizintechnische Wissenschaften, B.Sc. – Aufbaustudium für ausgebildete MTL/MTR)'
       ],
       costs: 'Keine Studiengebühren an der DHBW für EU-Studierende; monatliche Vergütung durch das Partnerunternehmen (tarif- und branchenabhängig)',
       professionIds: ['medizintechnikingenieur', 'servicetechniker', 'produktspezialist', 'anwendungstechniker'],
-      link: 'https://www.heidenheim.dhbw.de/medizintechnische-wissenschaften-studieren'
+      link: 'https://www.mannheim.dhbw.de'
     },
 
     /* ---------------------------------------------------------------- Studium Master */
@@ -366,14 +365,14 @@ MTH.education = {
         'Klinische Praktika und Masterarbeit'
       ],
       providers: [
-        'Universität Heidelberg – Medizinische Fakultät Mannheim (M.Sc. mit Schwerpunkt Medizinische Physik/Radiotherapie)',
-        'TU Dortmund (Medizinphysik, M.Sc.)',
+        'Universität Heidelberg – Medizinische Fakultät Mannheim (Biomedical Engineering, M.Sc., u. a. mit Schwerpunkt Radiotherapy)',
+        'TU Dortmund und Ruhr-Universität Bochum (Medizinphysik, M.Sc., gemeinsamer Studiengang)',
         'Martin-Luther-Universität Halle-Wittenberg (Medizinische Physik, M.Sc.)',
-        'Universität Tübingen (Medizinische Strahlenwissenschaften, M.Sc.)'
+        'Universität Tübingen (Medizinische Strahlenwissenschaften, M.Sc., u. a. Profil Medizinphysik-Experte/in)'
       ],
       costs: 'Semesterbeitrag je nach Hochschule',
       professionIds: ['medizinphysiker'],
-      link: 'https://www.uni-heidelberg.de/de/studium/alle-studienfaecher/biomedical-engineering/biomedical-engineering-master'
+      link: 'https://www.dgmp.de'
     },
     {
       id: 'msc-biomedical-engineering',
@@ -421,7 +420,7 @@ MTH.education = {
       ],
       contents: [
         'Rechtliche Grundlagen: MDR, IVDR, MPDG, MPBetreibV',
-        'Aufgaben und Pflichten des Medizinprodukteberaters, Dokumentation',
+        'Aufgaben und Pflichten von Medizinprodukteberater/innen, Dokumentation',
         'Rolle im Vigilanzsystem: Meldung von Vorkommnissen',
         'Heilmittelwerbegesetz (HWG) und Medizinprodukte-Kodex / Antikorruption',
         'Behörden und ihre Strukturen (z. B. BfArM, Landesbehörden)',
@@ -432,7 +431,7 @@ MTH.education = {
         'TÜV Rheinland Akademie',
         'Hersteller-interne Schulungsprogramme'
       ],
-      costs: 'Richtwert: ca. 500–800 € netto pro Seminar (z. B. TÜV SÜD Akademie 2026: 709 € zzgl. 55 € Prüfungsgebühr)',
+      costs: 'Richtwert: ca. 500–800 € netto pro Seminar (z. B. TÜV SÜD Akademie, Stand 2026: 709 € zzgl. 55 € Prüfungsgebühr, jeweils zzgl. USt.)',
       professionIds: ['produktspezialist', 'anwendungstechniker', 'servicetechniker'],
       link: 'https://www.tuvsud.com/de-de/store/akademie/seminare-technik/medizintechnik/nationale-gesetzgebung-fuer-medizintechnik/4611083'
     },
@@ -470,8 +469,8 @@ MTH.education = {
       level: 'Fachseminar nach MPBetreibV',
       title: 'Sicherheitstechnische und messtechnische Kontrollen (STK/MTK) nach MPBetreibV',
       duration: 'ca. 1 Tag je Seminar (STK bzw. MTK), dazu gerätespezifische Herstellerschulungen',
-      degree: 'Teilnahmebescheinigung; Qualifikationsnachweis im Sinne von § 5 MPBetreibV gemeinsam mit Ausbildung und Erfahrung',
-      description: 'Sicherheitstechnische Kontrollen (§ 11 MPBetreibV, Anlage 1) und messtechnische Kontrollen (§ 14 MPBetreibV, Anlage 2) dürfen nur Personen durchführen, die die Anforderungen des § 5 MPBetreibV erfüllen: Sachkenntnis, Erfahrung, Weisungsunabhängigkeit sowie geeignete Mess- und Prüfeinrichtungen. Die Seminare vermitteln rechtliche Grundlagen, Prüfabläufe und Dokumentation. Für MTK ist der Leitfaden der PTB eine wichtige Grundlage.',
+      degree: 'Teilnahmebescheinigung; ersetzt nicht die Sachkenntnis nach § 5 MPBetreibV, sondern ergänzt Ausbildung und Berufserfahrung',
+      description: 'Sicherheitstechnische Kontrollen (§ 12 MPBetreibV, Anlage 1) und messtechnische Kontrollen (§ 15 MPBetreibV, Anlage 2) – nach der seit 20. Februar 2025 geltenden Neufassung der Verordnung – dürfen nur Personen durchführen, die die Anforderungen des § 5 MPBetreibV erfüllen: Sachkenntnis, Erfahrung, Weisungsunabhängigkeit sowie geeignete Mess- und Prüfeinrichtungen. Die Seminare vermitteln rechtliche Grundlagen, Prüfabläufe und Dokumentation. Für MTK wird eine ordnungsgemäße Durchführung vermutet, wenn der Leitfaden der PTB beachtet wird.',
       requirements: [
         'Einschlägige technische Ausbildung (z. B. Elektroniker/in, Techniker/in Medizintechnik) oder Studium',
         'Kenntnisse in MPDG und MPBetreibV',
@@ -501,7 +500,7 @@ MTH.education = {
       title: 'Elektrofachkraft (EFK) / Elektrofachkraft für festgelegte Tätigkeiten (EFKffT)',
       duration: 'EFKffT: ca. 80–200 Unterrichtseinheiten je nach Anbieter und Tätigkeitsumfang; jährliche Unterweisung bzw. Wiederholungsschulung',
       degree: 'Zertifikat des Lehrgangs; schriftliche Bestellung durch den Arbeitgeber für die festgelegten Tätigkeiten',
-      description: 'Nach DGUV Vorschrift 3 dürfen elektrische Arbeiten nur von Elektrofachkräften oder unter deren Leitung ausgeführt werden. Fachkräfte ohne elektrotechnische Ausbildung – etwa aus Mechanik oder Gesundheitsberufen – können sich zur Elektrofachkraft für festgelegte Tätigkeiten qualifizieren, z. B. für Prüfungen ortsveränderlicher Betriebsmittel oder Arbeiten an Medizingeräten bis 1.000 V AC. Die Qualifikation gilt nur für die tatsächlich ausgebildeten und schriftlich übertragenen Tätigkeiten.',
+      description: 'Nach DGUV Vorschrift 3 dürfen elektrische Arbeiten nur von Elektrofachkräften oder unter deren Leitung ausgeführt werden. Fachkräfte ohne elektrotechnische Ausbildung – etwa aus Mechanik oder Gesundheitsberufen – können sich zur Elektrofachkraft für festgelegte Tätigkeiten qualifizieren, z. B. für Prüfungen ortsveränderlicher Betriebsmittel oder den Austausch von Baugruppen an Medizingeräten. Die Qualifikation gilt nur für die tatsächlich ausgebildeten und schriftlich übertragenen Tätigkeiten.',
       requirements: [
         'Abgeschlossene Berufsausbildung in einem handwerklichen oder gewerblich-technischen Beruf (für EFKffT)',
         'Für die volle EFK: elektrotechnische Berufsausbildung, Techniker- oder Ingenieurabschluss',
@@ -559,7 +558,7 @@ MTH.education = {
       title: 'Fachanerkennung Medizinische Physik (DGMP) – Medizinphysik-Experte/in',
       duration: 'In der Regel mindestens 3 Jahre strukturierte Weiterbildung unter Anleitung',
       degree: 'Fachanerkennung „Medizinphysiker/in (DGMP)“',
-      description: 'Die Deutsche Gesellschaft für Medizinische Physik (DGMP) vergibt nach ihrer Weiterbildungsordnung die Fachanerkennung für Medizinische Physik. Voraussetzung ist eine mehrjährige berufliche Tätigkeit unter Anleitung einer/eines Weiterbildungsermächtigten, der Nachweis theoretischer Inhalte sowie ein abschließendes Fachgespräch. Die Fachanerkennung ist von der staatlich geforderten Fachkunde im Strahlenschutz für Medizinphysik-Experten zu unterscheiden, die zusätzlich bei der zuständigen Behörde nachgewiesen wird.',
+      description: 'Die Deutsche Gesellschaft für Medizinische Physik (DGMP) vergibt nach ihrer Weiterbildungsordnung die Fachanerkennung für Medizinische Physik. Voraussetzung ist eine mehrjährige berufliche Tätigkeit unter Anleitung einer/eines Weiterbildungsermächtigten, der Nachweis theoretischer Inhalte sowie ein abschließendes Fachgespräch. Die Fachanerkennung ist von der staatlich geforderten Fachkunde im Strahlenschutz für Medizinphysik-Expert/innen zu unterscheiden, die zusätzlich bei der zuständigen Behörde nachgewiesen wird.',
       requirements: [
         'Masterabschluss in Medizinischer Physik oder Physik bzw. gleichwertiger Hochschulabschluss',
         'Anstellung an einer Einrichtung mit Weiterbildungsermächtigung',
@@ -574,8 +573,7 @@ MTH.education = {
       ],
       providers: [
         'Deutsche Gesellschaft für Medizinische Physik (DGMP)',
-        'Weiterbildungsermächtigte Kliniken (z. B. Universitätskliniken)',
-        'Universität Heidelberg (Kurs Medizinische Physik nach DGMP-Stoffkatalog)'
+        'Weiterbildungsermächtigte Kliniken (z. B. Universitätskliniken)'
       ],
       costs: 'Weiterbildung erfolgt in der Regel berufsbegleitend in einer bezahlten Anstellung; Gebühren für Kurse und Anerkennung je nach Anbieter',
       professionIds: ['medizinphysiker'],
@@ -646,7 +644,7 @@ MTH.education = {
       title: 'Verantwortliche Person für die Einhaltung der Regulierungsvorschriften (PRRC) nach Art. 15 MDR',
       duration: 'ca. 1–2 Tage',
       degree: 'Teilnahmebescheinigung; die rechtlich geforderte Qualifikation ergibt sich aus Abschluss und Berufserfahrung',
-      description: 'Hersteller müssen nach Art. 15 MDR mindestens eine Person mit dem erforderlichen Fachwissen auf dem Gebiet der Medizinprodukte verfügbar haben, die für die Einhaltung der Regulierungsvorschriften verantwortlich ist. Gefordert ist ein Hochschulabschluss in Recht, Medizin, Pharmazie, Ingenieurwesen oder einer anderen einschlägigen wissenschaftlichen Disziplin plus mindestens ein Jahr Berufserfahrung in Regulierungsfragen oder QM-Systemen – oder alternativ vier Jahre einschlägige Berufserfahrung. Kleinst- und Kleinunternehmen dürfen eine externe PRRC dauerhaft und ständig zur Verfügung haben.',
+      description: 'Hersteller müssen nach Art. 15 MDR mindestens eine Person mit dem erforderlichen Fachwissen auf dem Gebiet der Medizinprodukte verfügbar haben, die für die Einhaltung der Regulierungsvorschriften verantwortlich ist. Gefordert ist ein Hochschulabschluss in Recht, Medizin, Pharmazie, Ingenieurwesen oder einer anderen einschlägigen wissenschaftlichen Disziplin plus mindestens ein Jahr Berufserfahrung in Regulierungsfragen oder QM-Systemen – oder alternativ vier Jahre einschlägige Berufserfahrung. Kleinst- und Kleinunternehmen müssen keine eigene PRRC beschäftigen; ihnen muss aber eine solche Person dauerhaft und ständig zur Verfügung stehen.',
       requirements: [
         'Hochschulabschluss in einem einschlägigen Fach und mindestens 1 Jahr Erfahrung in Regulatory Affairs oder QM-Systemen für Medizinprodukte',
         'Alternativ: mindestens 4 Jahre Berufserfahrung in Regulierungsfragen oder QM-Systemen für Medizinprodukte'
