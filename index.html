@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MedTech Career Hub – Berufe, Ausbildung & Arbeitgeber in der Medizintechnik</title>
+  <meta name="description" content="Karriere- und Informationsplattform für Berufe in der Medizintechnik: Berufsbilder, Ausbildung und Studium, Arbeitgeber, Gehälter (Richtwerte), Arbeitsmarkt und Karriere-Tools.">
+  <meta name="theme-color" content="#0f5c8c">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f5c8c'/%3E%3Cpath d='M26 14h12v12h12v12H38v12H26V38H14V26h12z' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    // Theme vor dem ersten Rendern setzen (verhindert Flackern)
+    (function () {
+      try {
+        var t = localStorage.getItem('mth-theme');
+        if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#/" class="brand" aria-label="MedTech Career Hub – Startseite">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="32" height="32"><rect width="32" height="32" rx="8" fill="currentColor"/><path d="M13 7h6v6h6v6h-6v6h-6v-6H7v-6h6z" fill="#fff"/></svg>
+        </span>
+        <span class="brand-text">MedTech <strong>Career Hub</strong></span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Menü öffnen">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Hauptnavigation">
+        <a href="#/berufe" data-nav="berufe">Berufswelt</a>
+        <a href="#/ausbildung" data-nav="ausbildung">Ausbildung &amp; Studium</a>
+        <a href="#/arbeitgeber" data-nav="arbeitgeber">Arbeitgeber</a>
+        <a href="#/gehalt" data-nav="gehalt">Gehalt &amp; Markt</a>
+        <a href="#/tools" data-nav="tools">Karriere-Tools</a>
+        <a href="#/merkliste" data-nav="merkliste" class="nav-fav" aria-label="Merkliste">
+          <span aria-hidden="true">★</span> <span class="fav-count" hidden>0</span>
+        </a>
+        <button class="theme-toggle" type="button" aria-label="Farbschema wechseln" title="Hell/Dunkel">
+          <span class="theme-icon" aria-hidden="true">◐</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <noscript>
+      <div class="container"><p class="notice">Diese Plattform benötigt JavaScript. Bitte aktivieren Sie JavaScript in Ihrem Browser.</p></div>
+    </noscript>
+    <div id="app" aria-live="polite"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <p class="brand-text footer-brand">MedTech <strong>Career Hub</strong></p>
+        <p class="muted small">Unabhängige Informationsplattform zu Berufen, Ausbildung und Arbeitgebern in der Medizintechnik in Deutschland.</p>
+      </div>
+      <div>
+        <p class="footer-title">Entdecken</p>
+        <ul class="plain-list small">
+          <li><a href="#/berufe">Berufsbilder</a></li>
+          <li><a href="#/ausbildung">Ausbildung &amp; Studium</a></li>
+          <li><a href="#/arbeitgeber">Unternehmensverzeichnis</a></li>
+          <li><a href="#/gehalt">Gehälter &amp; Arbeitsmarkt</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">Tools</p>
+        <ul class="plain-list small">
+          <li><a href="#/tools/kompetenzprofil">Kompetenzprofil</a></li>
+          <li><a href="#/tools/lernpfad">Lernpfad</a></li>
+          <li><a href="#/tools/vergleich">Berufsvergleich</a></li>
+          <li><a href="#/tools/interview">Interviewtraining</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-title">Hinweis</p>
+        <p class="muted small">Alle Gehaltsangaben sind Richtwerte und ersetzen keine individuelle Beratung. Unternehmensangaben ohne Gewähr; maßgeblich sind die Angaben der jeweiligen Organisationen. <a href="#/ueber">Über diese Plattform &amp; Quellen</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Daten (klassische Skripte, funktionieren auch über file://) -->
+  <script src="js/data/professions-a.js"></script>
+  <script src="js/data/professions-b.js"></script>
+  <script src="js/data/education.js"></script>
+  <script src="js/data/employers-a.js"></script>
+  <script src="js/data/employers-b.js"></script>
+  <script src="js/data/salaries.js"></script>
+  <script src="js/data/tools.js"></script>
+  <!-- Anwendung -->
+  <script src="js/charts.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
